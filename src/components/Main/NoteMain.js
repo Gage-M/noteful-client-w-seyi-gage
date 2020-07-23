@@ -48,7 +48,7 @@ class NoteMain extends Component {
 								<h2 className='note__title'>
 									<Link to={`/note/${noteid}`}>
 										{getCurrentNote(noteid) &&
-											getCurrentNote(noteid).name}
+											getCurrentNote(noteid).note_name}
 									</Link>
 								</h2>
 							</ErrorBoundary>
