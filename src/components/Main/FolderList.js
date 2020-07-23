@@ -7,17 +7,17 @@ import './Main.css'
 
 export default function FolderList(props) {
 	const folderid = props.match.params.folderid
-	console.log(props.notes)
+	console.log(props)
+
 	return (
-		
 		<main className='app__main'>
 			<section className='note__list__wrapper'>
 				<ul className='note__list'>
 					<Consumer>
-						{(value) =>
+						{ value =>
 							value.state.notes.map(
 								(note) =>
-									note.folde_id === folderid && (
+									note.folder_id === Number(folderid) && (
 										<NoteListItem key={note.id} note={note} />
 									)
 							)

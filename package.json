@@ -1,7 +1,7 @@
 {
-  "name": "noteful",
+  "name": "noteful-client",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -15,6 +15,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild":"CI=true react-scripts test --colors",
+    "predploy":"npm run build",
+    "deploy":"vercel --prod",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

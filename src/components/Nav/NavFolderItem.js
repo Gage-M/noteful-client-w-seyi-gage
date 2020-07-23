@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom'
 export default function NavFolderItem(props) {
 	const amountOfNotes = (notes, folderid) =>
 		notes.filter((note) => note.folder_id === folderid).length
-	console.log(props)
 	return (
 		<li
 			key={props.folder.id}

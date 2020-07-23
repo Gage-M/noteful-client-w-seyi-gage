@@ -88,7 +88,8 @@ export class AppContext extends Component {
 	}
 	
 	render() {
-		console.log(this.state.notes.map(i => typeof i.id))
+		console.table(this.state.notes)
+		console.table(this.state.folders)
 		return (
 			<Context.Provider
 				value={

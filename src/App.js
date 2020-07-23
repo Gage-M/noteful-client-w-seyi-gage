@@ -35,7 +35,7 @@ const App = () => {
 			<Switch>
 				<Route
 					path='/folder/:folderid'
-					render={(routeProps) => <FolderList {...routeProps} />}
+					render={(routeProps) => <FolderList  {...routeProps} />}
 				/>
 				<Route
 					path='/note/:noteid'
