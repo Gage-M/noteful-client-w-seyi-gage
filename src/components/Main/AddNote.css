@@ -1,0 +1,12 @@
+label {
+	display: block;
+	font-size: 16px;
+	padding-bottom: 8px;
+}
+.add__note__form {
+	background-color: hsl(215, 64%, 24%);
+	color: white;
+}
+.note__list__wrapper h2 {
+	color: white;
+}
