@@ -72,7 +72,7 @@ class NoteMain extends Component {
 										Modified{' '}
 										<span className='date'>{`${new Date(
 											getCurrentNote(noteid) &&
-												getCurrentNote(noteid).modified
+												getCurrentNote(noteid).date_created
 										).toDateString()}`}</span>
 									</div>
 								</ErrorBoundary>

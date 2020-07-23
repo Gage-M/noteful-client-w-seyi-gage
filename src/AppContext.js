@@ -24,7 +24,7 @@ export class AppContext extends Component {
 		this.setState({ folders: newFolders })
 	}
 	getCurrentNote = (id) => {
-		return this.state.notes.find((note) => note.id === id)
+		return this.state.notes.find((note) => note.id ===Number( id))
 	}
 
 	getName = (id) =>
@@ -88,6 +88,7 @@ export class AppContext extends Component {
 	}
 	
 	render() {
+		console.log(this.state.notes.map(i => typeof i.id))
 		return (
 			<Context.Provider
 				value={

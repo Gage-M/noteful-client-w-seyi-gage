@@ -39,7 +39,7 @@ class NoteListItem extends Component {
 	render() {
 		const { note } = this.props
 
-
+		console.table(this.props)
 		return (
 			
 				<div className='note__'>
